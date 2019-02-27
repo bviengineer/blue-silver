@@ -3,6 +3,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: scroll;
 }
 
 /* PAGE HEADER STYLES*/
@@ -38,8 +39,8 @@ nav ul li {
   display: inline;
   list-style-type: none;
 }
-
 /* end desktop styles */
+
 h1 {
   color: white;
   font-size: 2.3em;
@@ -72,7 +73,7 @@ main, footer {
 }
 
 /* removes default & user agent margins from <h2>about</h2> & <h2>contact</h2>*/
-section.about h2, section.contact p {
+section.about h2, footer p {
   margin-top: 0;
   padding-top: 0;
   margin-block-start: 0;
@@ -86,6 +87,7 @@ section {
 h2 {
   font-size: 3em;
   color: hsla(0, 100%, 12%, 0.4);
+  color: hsla(51, 27%, 24%, 0.8);
 }
 
 .about {
@@ -94,10 +96,60 @@ h2 {
 
 p {
   padding: 0 1em;
+  color: hsl(51, 27%, 24%);
 }
 
 
 /* PAGE FOOTER */
+footer {
+  background-color: hsla(0, 100%, 5%, 0.2);
+  color: hsl(51, 27%, 24%);
+  height: 50em;
+  padding: 3em 2em 0 2em;
+  text-align: left;
+}
+
+section.contact {
+  padding-bottom: 10em;
+  height: 0;
+}
+
+h3 {
+  color: hsla(51, 27%, 24%, 0.8);
+  font-size: 2em;
+  padding-bottom: 0;
+  margin-bottom: 0.1em;
+}
+
+footer section a {
+  line-height: 2em;
+}
+
+[href="mailto:slydba@gmail.com"], [href="tel:+6780000000"] {
+  text-decoration: none;
+  color: hsl(51, 27%, 24%);
+}
+
+.footer-nav li {
+  display: block;
+  line-height: 2em;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+ul.footer-nav {
+  padding-inline-start: 0;
+  padding: 2em 0;
+}
+
+footer hr {
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+small {
+  text-align: center;
+}
 
 
 /* MEDIA QUERIES */
