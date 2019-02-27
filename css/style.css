@@ -1,0 +1,94 @@
+/* UNIVERSAL STYLES */
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* PAGE HEADER */
+header {
+  background-color: hsl(260, 100%, 21%);  
+  height: 40em;
+  border-top: 50px solid yellowgreen;
+  margin-bottom: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: start;
+}
+
+.grid-item1 {
+  background-color: blue;
+}
+
+.grid-item2 {
+  background-color: red;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+
+h1 {
+  color: white;
+  font-size: 2.3em;
+  text-align: center;
+  padding: 4em 1em 0;
+}
+
+.down-arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  margin-top: 4.5em;
+  filter: saturate(0) invert(50%) brightness(900%);
+}
+
+.down-arrow:hover {
+  border: 5px solid orange;
+  border-radius: 50%;
+  filter: saturate(0) invert(50%) brightness(150%);
+}
+
+
+/* PAGE BODY */
+main, footer {
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+section.about h2, section.contact p {
+  margin-top: 0;
+  padding-top: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* PAGE FOOTER */
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 550px){
+  .grid-item1 {
+   display: none; 
+  }
+
+  li {
+    display: none;
+  }
+
+  .grid-item2 {
+    display: none;
+    background-color: white;
+  }
+}
