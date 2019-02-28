@@ -7,25 +7,27 @@ body {
   overflow: scroll;
 }
 
+
 /* PAGE HEADER STYLES*/
 header {
   background-color: hsl(260, 100%, 21%);  
-  height: 40em;
   border-top: 50px solid yellowgreen;
   margin-bottom: 0;
+  height: 40em;
 }
 
 .co-name {
   text-transform: uppercase;
   color: yellowgreen;
+  font-weight: 700;
 }
 
 /* begin desktop styles */
-.grid-container {
+/* .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
   align-content: start;
+  grid-template-columns: auto auto;
+  justify-content: space-between;  
 }
 
 .grid-item1 {
@@ -39,7 +41,7 @@ header {
 nav ul li {
   display: inline;
   list-style-type: none;
-}
+} */
 /* end desktop styles */
 
 h1 {
@@ -49,12 +51,22 @@ h1 {
   padding: 3em 1em 0;
 }
 
+/* h1::after {
+  content: "";
+  border-radius: 50%;
+  border: 3px solid yellowgreen;
+  margin-top: 40em;
+  height: 500px;
+  width: 250px;
+  background-color: white;
+} */
+
 .down-arrow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 8em;
+  display: block;  
   margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto;  
   filter: saturate(0) invert(50%) brightness(900%);
 }
 
@@ -68,17 +80,17 @@ h1 {
 
 /* PAGE BODY STYLES*/
 main, footer {
+  margin-top: 0;
   text-align: center;
   background-color: #f1f1f1;
-  margin-top: 0;
 }
 
 /* removes default & user agent margins from <h2>about</h2> & <h2>contact</h2>*/
 section.about h2, footer p {
   margin-top: 0;
   padding-top: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  margin-block-start: 0; /* user agent properties*/
+  margin-block-end: 0; /* user agent properties*/
 }
 
 section {
@@ -96,7 +108,7 @@ h2 {
 }
 
 .about, .training, .services {
-  box-shadow: 20px 10px 10px hsla(51, 27%, 24%, 0.5);
+  box-shadow: 10px 10px 10px hsla(51, 27%, 24%, 0.5);
 }
 
 .about:hover, .training:hover, .services:hover {
@@ -172,7 +184,11 @@ section.follow-us {
 
 .fa-globe, .fa-youtube, .fa-twitter {
   font-size: 1.8em;
-  padding: 0.5em 0.5em 0;
+  padding: 0.5em 0.5em 0 0;
+}
+
+.fa-globe {
+  padding-left: 0.5;
 }
 
 small {
