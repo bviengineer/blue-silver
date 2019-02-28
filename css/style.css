@@ -1,5 +1,6 @@
 /* UNIVERSAL STYLES */
 body {
+  font-family: 'Laila', serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -45,15 +46,15 @@ h1 {
   color: white;
   font-size: 2.3em;
   text-align: center;
-  padding: 4em 1em 0;
+  padding: 3em 1em 0;
 }
 
 .down-arrow {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 10em;
-  margin-top: 4.5em;
+  width: 8em;
+  margin-top: 4em;
   filter: saturate(0) invert(50%) brightness(900%);
 }
 
@@ -85,8 +86,8 @@ section {
 }
 
 h2 {
-  font-size: 3em;
-  color: hsla(0, 100%, 12%, 0.4);
+  font-size: 2em;
+  text-transform: uppercase;
   color: hsla(51, 27%, 24%, 0.8);
 }
 
@@ -95,7 +96,8 @@ h2 {
 }
 
 p {
-  padding: 0 1em;
+  padding: 0 2em;
+  font-size: 1em;
   color: hsl(51, 27%, 24%);
 }
 
@@ -110,7 +112,7 @@ footer {
 }
 
 section.contact {
-  padding-bottom: 10em;
+  padding-bottom: 8em;
   height: 0;
 }
 
@@ -135,6 +137,11 @@ footer section a {
   line-height: 2em;
   text-align: left;
   font-size: 1.5em;
+  color: orange;
+}
+
+ul.footer-nav li:hover {
+  color: white;
 }
 
 ul.footer-nav {
@@ -149,7 +156,7 @@ footer hr {
 
 section.follow-us {
   height: 0;
-  padding-top: 1.8em;
+  padding: 1.8em 0;
   text-align: center;
 }
 
@@ -164,7 +171,7 @@ small {
 
 .copyright {
   font-weight: bold;
-  padding: 13em 0 0;
+  padding: 11em 0 0;
   margin: 0;
   text-align: center;
 }
