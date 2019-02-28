@@ -115,7 +115,7 @@ p {
 footer {
   background-color: hsla(0, 100%, 5%, 0.2);
   color: hsl(51, 27%, 24%);
-  height: 50em;
+  height: 60em;
   padding: 3em 2em 0 2em;
   text-align: left;
 }
@@ -181,7 +181,7 @@ small {
 
 .copyright {
   font-weight: bold;
-  padding: 11em 0 0;
+  padding: 15em 0 0;
   margin: 0;
   text-align: center;
 }
